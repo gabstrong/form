@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" id="cssfile" href="light.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="split">
+        <div class="left">
+            <div class="welcome">
+                <h1>Welcome to our</h1>
+            <h1>Website</h1>
+            </div>
+            
+        </div>
+        <div class="right">
+
+            <nav>
+                <p>already have an account</p>
+                <button class="pinkbtn">register</button>
+            </nav>
+            <div class="inner">
+                <div class="header">
+                    <h1>Hello! Welcome back.</h1>
+                    <p>login with the data you entered</p>
+                    <p> during your registration</p>
+                </div>
+               
+                <form action="#">
+                    <label for="email">Email address</label>
+                    <br>
+                    
+                    <input type="text" for="email" placeholder="Enter email address">
+                   
+                    <div class="forgot">
+                        <label for="password">Password</label>
+                        <p style="color: blue;">forgot password</p>
+                        
+                     </div>
+                    
+                    <input type="password" for="password" placeholder="Enter password">
+                    <br>
+                    
+                    <button class="start">Start now!</button>
+                    <div class="or">
+                        <div class="line1"></div>
+                        <p>OR</p>
+                        <div class="line2"></div>
+                    </div>
+                     <button class="sign">Sign with Google</button>
+                </form>
+                 <div class="bottom">
+                    <p>Dont have an account? <a href="#">sign up</a></p>
+                 </div>
+               <div class="mode">
+                <button id="dmbutton">Dark mode</button>
+               </div>
+                
+            </div>
+          
+        </div>
+    </div>
+      <script>
+        document.getElementById('dmbutton').addEventListener('click', function(){
+      
+      const css = document.getElementById('cssfile');
+      const dmb = document.getElementById('dmbutton');
+  
+       if(dmb.innerHTML == 'Dark mode'){
+               css.setAttribute('href' , 'dark.css');
+               dmb.innerHTML = 'Light mode';
+       }else{
+        css.setAttribute('href' , 'light.css');
+               dmb.innerHTML = 'Dark mode';
+  
+       }
+  
+  
+  
+  
+  });
+      </script>
+
+
+</body>
+</html>

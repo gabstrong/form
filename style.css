@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(skyblue,red);
+}
+.split{
+    width: 900px;
+    height: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 13px 10px 8px  black;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.left{
+    width: 50%;
+    background-image: url(img/pexels-jopwell-2422279.jpg);
+    background-position: right;
+    background-size: cover;
+}
+.left .welcome{
+    color: #ffffff;
+    text-shadow: 3px 2px 3px grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 70%;
+}
+
+.right{
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 50px;
+    background-color: white;
+    position: relative;
+    
+}
+.right nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 0px;
+}
+.right nav .pinkbtn{
+    padding: 8px 15px;
+    background-color: #f9004d;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: .7rem;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 2px;
+}
+.right .inner{
+    width: 100%;
+    height: 90%;
+    padding: 10px 10px;
+
+}
+.right .inner .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inner .header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    font-size: 1.6em;
+
+}
+form{
+    margin-top: 20px;
+    padding-left: 5px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    box-shadow: 1px 2px 1px grey;
+    border: none;
+    border-radius: 5px;
+}
+::placeholder{
+    font-size: .7rem;
+}
+form .forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+    height: 5vh;
+}
+form .start{
+    width: 100%;
+    height: 30px;
+    background-color: #f9004d;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+    font-size: .7rem;
+}
+form .or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 5vh;
+}
+.or .line1{
+    width: 120px;
+    height: 2px;
+    background-color: grey;
+}
+.or .line2{
+    width: 120px;
+    height: 2px;
+    background-color: gray;
+}
+form .sign{
+    width: 100%;
+    height: 30px;
+    color: grey;
+    border: none;
+    margin-top: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px grey;
+    font-size: .7rem;
+}
+.bottom{
+    text-align: center;
+    margin-top: 20px;
+}
+.mode{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+.mode button{
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+body{
+    box-shadow: 13px 10px 8px  grey;
+    color: white;
+    background: linear-gradient(rgb(33, 38, 41),rgb(167, 147, 147));
+}
+.left{
+    background-image: url(img/pexels-oladimeji-ajegbile-4930018.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.left h1{
+    color: black;
+}
+.right{
+    background-color: rgb(32, 31, 31);
+    color: white;
+}
+.mode button{
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    color: red;
+    background-color: white;
+    border-radius: 4px;
+}
